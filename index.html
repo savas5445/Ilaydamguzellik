@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IlaydaGuzellik — Güzellik ve Bakım</title>
+  <meta name="description" content="IlaydaGuzellik — Profesyonel güzellik ve bakım hizmetleri. Randevu için arayın veya formu doldurun." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">IlaydaGuzellik</a>
+      <nav class="nav">
+        <a href="#services">Hizmetler</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+      <a class="phone-btn" href="tel:+90-555-000-0000">Ara: +90 555 000 0000</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hoşgeldiniz — IlaydaGuzellik</h1>
+          <p>Profesyonel cilt bakımı, makyaj, manikür/pedikür ve daha fazlası. Kendinizi şımartın.</p>
+          <a class="btn primary" href="#contact">Randevu Al</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1556228720-7b4b3b8b9a1b?q=80&w=900&auto=format&fit=crop" alt="Güzellik salonu" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h2>Hizmetlerimiz</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Cilt Bakımı</h3>
+          <p>Derinlemesine temizlik, nemlendirme ve kişiye özel bakım paketleri.</p>
+          <span class="price">Başlangıç ₺150</span>
+        </div>
+        <div class="service-card">
+          <h3>Profesyonel Makyaj</h3>
+          <p>Günlük veya özel gün makyajı, prova ve kalıcı makyaj danışmanlığı.</p>
+          <span class="price">Başlangıç ₺200</span>
+        </div>
+        <div class="service-card">
+          <h3>Manikür & Pedikür</h3>
+          <p>Hijyenik uygulama, kalıcı oje ve rahatlatıcı bakım.</p>
+          <span class="price">Başlangıç ₺100</span>
+        </div>
+        <div class="service-card">
+          <h3>Ağda & Epilasyon</h3>
+          <p>Hassas ve uzun süreli sonuçlar için profesyonel epilasyon.</p>
+          <span class="price">Başlangıç ₺80</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>Hakkımızda</h2>
+      <p>IlaydaGuzellik, uzman estetisyenler ve sıcak bir ortam ile kişiye özel güzellik hizmetleri sunar. Kaliteden ödün vermiyor, hijyen ve müşteri memnuniyetini ön planda tutuyoruz.</p>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <h2>Galeri</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=600&auto=format&fit=crop" alt="galeri1" />
+        <img src="https://images.unsplash.com/photo-1520975913674-3c3d7e1efb32?q=80&w=600&auto=format&fit=crop" alt="galeri2" />
+        <img src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?q=80&w=600&auto=format&fit=crop" alt="galeri3" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>İletişim & Randevu</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Adres:</strong> Örnek Mah. Güzellik Sok. No:5, İstanbul</p>
+          <p><strong>Telefon:</strong> +90 555 000 0000</p>
+          <p><strong>Çalışma Saatleri:</strong> Pzt-Cum 09:00 - 19:00, Cmt 10:00 - 16:00</p>
+          <a class="btn outline" href="tel:+905550000000">Hemen Ara</a>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/maypvlkq" method="POST">
+          <label>İsim
+            <input type="text" name="name" required />
+          </label>
+          <label>E-posta
+            <input type="email" name="_replyto" required />
+          </label>
+          <label>Mesaj / Randevu Talebi
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Gönder</button>
+        </form>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=İstanbul&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> IlaydaGuzellik. Tüm hakları saklıdır.</p>
+      <p class="small">Sosyal: Instagram | Facebook</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

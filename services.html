@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hizmetler — IlaydaGuzellik</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">IlaydaGuzellik</a>
+      <nav class="nav">
+        <a href="index.html#services">Hizmetler</a>
+        <a href="index.html#contact">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Hizmet Detayları</h1>
+      <article class="service-detail">
+        <h2>Cilt Bakımı</h2>
+        <p>Detaylı cilt analizi, mikrodermabrazyon, serum uygulamaları ve ev bakım önerileri.</p>
+        <ul>
+          <li>Detaylı analiz</li>
+          <li>Derin temizlik</li>
+          <li>Nemlendirme ve serum</li>
+        </ul>
+      </article>
+
+      <article class="service-detail">
+        <h2>Makyaj</h2>
+        <p>Günlük, gece ve özel gün makyajı. Prova ve kalıcı makyaj danışmanlığı.</p>
+      </article>
+
+      <article class="service-detail">
+        <h2>Manikür & Pedikür</h2>
+        <p>Hijyen, bakım ve estetik uygulamalar. Kalıcı oje ve nail art seçenekleri.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> IlaydaGuzellik</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
