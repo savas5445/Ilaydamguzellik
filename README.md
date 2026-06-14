@@ -28,3 +28,5 @@ Form gönderimleri:
 
 Kişiselleştirme:
 - İsim, adres, telefon, resimler ve renkleri değiştirmek için ilgili dosyalarda düzenleme yap.
+
+Deployed: 2026-06-14T
