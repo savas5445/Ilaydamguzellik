@@ -18,6 +18,18 @@ body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica
 .nav a{margin:0 0.5rem; color:var(--muted); text-decoration:none}
 .phone-btn{background:var(--accent); color:var(--white); padding:0.5rem 0.9rem; border-radius:8px; text-decoration:none}
 
+/* Hamburger menü butonu */
+.hamburger{
+  display:none;
+  background:none;
+  border:none;
+  font-size:1.5rem;
+  cursor:pointer;
+  color:var(--dark);
+  padding:0.5rem;
+  z-index:21;
+}
+
 .hero{padding:2.5rem 0; background:linear-gradient(180deg, #fcfffb 0%, #f9fff9 100%)}
 .hero-inner{display:flex; gap:2rem; align-items:center; flex-wrap:wrap}
 .hero-text{flex:1; min-width:260px}
@@ -55,6 +67,35 @@ body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica
 @media(max-width:800px){
   .hero-inner{flex-direction:column}
   .contact-grid{grid-template-columns:1fr}
-  .nav{display:none}
+  
+  /* Hamburger menü göster */
+  .hamburger{display:block}
+  
+  /* Mobilde menü gizle */
+  .nav{
+    position:fixed;
+    top:60px;
+    left:0;
+    right:0;
+    background:var(--white);
+    flex-direction:column;
+    padding:1rem;
+    border-bottom:1px solid #eee;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    display:none;
+    z-index:10;
+  }
+  
+  /* Menü açıkken göster */
+  .nav.active{display:flex}
+  .nav a{
+    display:block;
+    padding:0.75rem 0;
+    margin:0;
+    color:var(--dark);
+    font-weight:500;
+  }
+  
+  .phone-btn{display:none}
   .hero-text h1{font-size:1.5rem}
 }
